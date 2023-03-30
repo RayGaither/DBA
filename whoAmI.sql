@@ -1,0 +1,1 @@
+select SUSER_NAME()
