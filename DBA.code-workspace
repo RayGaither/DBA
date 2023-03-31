@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "DBA",
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.zoomLevel": 1,
+		"terminal.integrated.shellIntegration.enabled": true,
+		"emmet.preferences": {}
+	}
+}
