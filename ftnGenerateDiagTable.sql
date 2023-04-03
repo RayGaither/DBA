@@ -34,3 +34,4 @@ RETURN @tableDef
 END
 --select @@SERVERNAME
 --GAROHSQL01.hi.hubbell-ad.com
+
