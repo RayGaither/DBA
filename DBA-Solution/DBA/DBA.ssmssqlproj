@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DBA">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="DC1VC1STJSQL:HI\argaither">
+          <Created>2023-04-06T10:05:04.080558-04:00</Created>
+          <Type>SQL</Type>
+          <Server>DC1VC1STJSQL</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="GAROHSQL01:HI\argaither">
+          <Created>2023-04-20T10:06:56.6250107-04:00</Created>
+          <Type>SQL</Type>
+          <Server>GAROHSQL01</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Alerts.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Alerts.sql</FullPath>
+        </FileNode>
+        <FileNode Name="all tables in view.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>all tables in view.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AllDatabasesInInstance.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>AllDatabasesInInstance.sql</FullPath>
+        </FileNode>
+        <FileNode Name="All-Databases-Instance.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>All-Databases-Instance.sql</FullPath>
+        </FileNode>
+        <FileNode Name="autoTune_TurnOn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>autoTune_TurnOn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="BackupHistDetails.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>BackupHistDetails.sql</FullPath>
+        </FileNode>
+        <FileNode Name="blitz_scratch.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>blitz_scratch.sql</FullPath>
+        </FileNode>
+        <FileNode Name="calc_MAXDOP.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>calc_MAXDOP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="calc_MAXDOP2.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>calc_MAXDOP2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ColumnNamesAll.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ColumnNamesAll.sql</FullPath>
+        </FileNode>
+        <FileNode Name="count all rows in DB.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>count all rows in DB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CreateTable_FromSelect.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>CreateTable_FromSelect.sql</FullPath>
+        </FileNode>
+        <FileNode Name="CustomerPaymentsRaas.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>CustomerPaymentsRaas.sql</FullPath>
+        </FileNode>
+        <FileNode Name="databaseDifferences.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>databaseDifferences.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DataCollector.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DataCollector.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dependencies.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>dependencies.sql</FullPath>
+        </FileNode>
+        <FileNode Name="dependencies-2.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>dependencies-2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="DiskSpace.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>DiskSpace.sql</FullPath>
+        </FileNode>
+        <FileNode Name="file_growth_adjestment.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>file_growth_adjestment.sql</FullPath>
+        </FileNode>
+        <FileNode Name="file_location_data_logs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>file_location_data_logs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FindAllColsInTable.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FindAllColsInTable.sql</FullPath>
+        </FileNode>
+        <FileNode Name="FindOpenTransactions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>FindOpenTransactions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ftnCreateTableFromDiagScript.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ftnCreateTableFromDiagScript.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ftnCreateTableFromDiagScript_TESTER.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ftnCreateTableFromDiagScript_TESTER.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ftnGenerateDiagTable.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ftnGenerateDiagTable.sql</FullPath>
+        </FileNode>
+        <FileNode Name="howManyDatabases.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>howManyDatabases.sql</FullPath>
+        </FileNode>
+        <FileNode Name="HubbellVersions.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>HubbellVersions.sql</FullPath>
+        </FileNode>
+        <FileNode Name="IndexFragmentation.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>IndexFragmentation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="JL_SP.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>JL_SP.sql</FullPath>
+        </FileNode>
+        <FileNode Name="JLRImportDeleteforProc.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>JLRImportDeleteforProc.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LinkedServer006.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LinkedServer006.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ListAllInstancesAccessableInNetwork.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ListAllInstancesAccessableInNetwork.sql</FullPath>
+        </FileNode>
+        <FileNode Name="MaintenanceSolution.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>MaintenanceSolution.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ObjectChanges.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DC1VC1STJSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DC1VC1STJSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>ObjectChanges.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Objects.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Objects.sql</FullPath>
+        </FileNode>
+        <FileNode Name="orphans.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>orphans.sql</FullPath>
+        </FileNode>
+        <FileNode Name="QueryRecomendations.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>QueryRecomendations.sql</FullPath>
+        </FileNode>
+        <FileNode Name="remove_DUPLICATES.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>remove_DUPLICATES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RemoveIndexesLeftByPerfGuide.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>RemoveIndexesLeftByPerfGuide.sql</FullPath>
+        </FileNode>
+        <FileNode Name="rename_Database.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>rename_Database.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Repl_Articles_Published.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Repl_Articles_Published.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ReplicationAllArticals.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ReplicationAllArticals.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ReplicationDropArtical.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ReplicationDropArtical.sql</FullPath>
+        </FileNode>
+        <FileNode Name="RowCountsAllDBOTables.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>RowCountsAllDBOTables.sql</FullPath>
+        </FileNode>
+        <FileNode Name="runScriptsFromFilesInFolder.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>runScriptsFromFilesInFolder.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SCHEMA_Move.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SCHEMA_Move.sql</FullPath>
+        </FileNode>
+        <FileNode Name="scratch-invoice.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>scratch-invoice.sql</FullPath>
+        </FileNode>
+        <FileNode Name="scriptOutCBMailProfile.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>scriptOutCBMailProfile.sql</FullPath>
+        </FileNode>
+        <FileNode Name="scriptUsersRoles.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>scriptUsersRoles.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShrinkDBFileIncremental.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShrinkDBFileIncremental.sql</FullPath>
+        </FileNode>
+        <FileNode Name="ShrinkDBPercentComplete.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>ShrinkDBPercentComplete.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp_cmd_off-on.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>sp_cmd_off-on.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SP_COUNTS_All_DBs.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SP_COUNTS_All_DBs.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp_help_revlogin.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>sp_help_revlogin.sql</FullPath>
+        </FileNode>
+        <FileNode Name="sp_whoDat.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DC1VC1STJSQL:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DC1VC1STJSQL</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>sp_whoDat.sql</FullPath>
+        </FileNode>
+        <FileNode Name="spCreateTableFromDiagScript.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>spCreateTableFromDiagScript.sql</FullPath>
+        </FileNode>
+        <FileNode Name="queryPlans.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:GAROHSQL01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>GAROHSQL01</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>queryPlans.sql</FullPath>
+        </FileNode>
+        <FileNode Name="table_create_Template.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>table_create_Template.sql</FullPath>
+        </FileNode>
+        <FileNode Name="TableNamesAllinDb.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>TableNamesAllinDb.sql</FullPath>
+        </FileNode>
+        <FileNode Name="tblLoginTracker.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>tblLoginTracker.sql</FullPath>
+        </FileNode>
+        <FileNode Name="test.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>test.sql</FullPath>
+        </FileNode>
+        <FileNode Name="UsersAndPermissionsInDB.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>UsersAndPermissionsInDB.sql</FullPath>
+        </FileNode>
+        <FileNode Name="View100.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>View100.sql</FullPath>
+        </FileNode>
+        <FileNode Name="View100Unchanged.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>View100Unchanged.sql</FullPath>
+        </FileNode>
+        <FileNode Name="VLF Check and adjust.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>VLF Check and adjust.sql</FullPath>
+        </FileNode>
+        <FileNode Name="vwIncomeStatement.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>vwIncomeStatement.sql</FullPath>
+        </FileNode>
+        <FileNode Name="what server am I running on.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>what server am I running on.sql</FullPath>
+        </FileNode>
+        <FileNode Name="whichServersDbOn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>whichServersDbOn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="who_am_i.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>who_am_i.sql</FullPath>
+        </FileNode>
+        <FileNode Name="who_is_active_v11_30.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>who_is_active_v11_30.sql</FullPath>
+        </FileNode>
+        <FileNode Name="whoAmI.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>whoAmI.sql</FullPath>
+        </FileNode>
+        <FileNode Name="WIP_Totals.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>WIP_Totals.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
