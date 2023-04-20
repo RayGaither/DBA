@@ -1,9 +1,9 @@
-USE Diagnostic
+USE ankura_dw
 GO
 /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT AO.[name]
        ,I.rows
-  FROM sys.objects AO
+  FROM [ankura_dw].sys.objects AO
   JOIN [sysindexes] I on AO.object_id = I.id
   WHERE AO.TYPE = 'u'
  -- AND SCHEMA_ID = 1

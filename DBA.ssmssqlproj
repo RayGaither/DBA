@@ -3,8 +3,8 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="DC1VC1PDSQL:HI\argaither">
-          <Created>2023-03-16T18:04:05.5890743-05:00</Created>
+        <ConnectionNode Name="DC1VC1PDSQL:HI\rgaither">
+          <Created>2023-03-16T19:04:05.5890743-04:00</Created>
           <Type>SQL</Type>
           <Server>DC1VC1PDSQL</Server>
           <UserName />
@@ -15,13 +15,25 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
-        <ConnectionNode Name="EXPSQL25:HI\argaither">
-          <Created>2023-03-09T16:30:01.0453996-06:00</Created>
+        <ConnectionNode Name="EXPSQL25:HI\rgaither">
+          <Created>2023-03-09T17:30:01.0453996-05:00</Created>
           <Type>SQL</Type>
           <Server>EXPSQL25</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
           <InitialDB>DBA_Inventory</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="GAROHSQL01:HI\rgaither">
+          <Created>2023-04-11T12:13:47.6073601-04:00</Created>
+          <Type>SQL</Type>
+          <Server>GAROHSQL01</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>Diagnostic</InitialDB>
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -86,8 +98,8 @@
           <FullPath>Z:\WorkFiles\SQL Server Management Studio\Reports\JournalLines\ColumnsFoundInWhichTables.sql</FullPath>
         </FileNode>
         <FileNode Name="count all rows in DB.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:GAROHSQL01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>GAROHSQL01</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>count all rows in DB.sql</FullPath>
         </FileNode>
@@ -248,8 +260,8 @@
           <FullPath>databaseDifferences.sql</FullPath>
         </FileNode>
         <FileNode Name="TableNamesAllinDb.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:GAROHSQL01:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>GAROHSQL01</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>TableNamesAllinDb.sql</FullPath>
         </FileNode>
