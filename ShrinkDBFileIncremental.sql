@@ -8,13 +8,13 @@ declare @FreeMB int
 declare @ShrinkMB int
 
 -- Desired free space in MB after shrink
-set @FreeMB = 1000
+set @FreeMB = 5000
 
 -- Increment to shrink file by in MB
 set @ShrinkMB = 50
 
 -- Name of Database file to shrink
-set @name = 'Y:\Microsoft SQL Server\Data\Utiliwise2.mdf'
+set @name = 'E:\Microsoft SQL Server\MSSQL14.MSSQLSERVER\MSSQL\DATA\SSISDB.ldf' --<--------------------
 
 -- Get current file size in MB
 select @sizeMB = size/128. from sysfiles where name = @name

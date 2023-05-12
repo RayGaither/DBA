@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+--<<<<<<< HEAD
 SELECT 
 mdf.database_id, 
 mdf.name, 
@@ -39,7 +39,7 @@ where 1 = 1
 and mdf.database_id > 4
 and mdf.name not in ('_DBAdmin','Aux_DBA_Utilities', 'master', 'model','MSDB')
 order by 1;
-
+*/
 /*
 SELECT * --name, cmptlevel 
 FROM master.dbo.sysdatabases
