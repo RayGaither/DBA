@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* 
    This will recommend a MAXDOP setting appropriate for your machine's NUMA memory
    configuration.  You will need to evaluate this setting in a non-production 
