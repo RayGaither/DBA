@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 use master
 go
@@ -59,13 +59,14 @@ EXECUTE sp_who2
 
 end;
 --create and populate table, executes above SP
-sp_whoDat
+exec sp_whoDat
 
 Select *
 from temp_sp_who2
---where hostname = 'ANKSVMSLAPPP100'
+where 1 = 1
+and login = 'hi\ploo'
 order by 3 
-=======
+
 
 use master
 go
