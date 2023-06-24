@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 SELECT			bs.database_name
 				, bs.[type],
 				Case 
@@ -16,7 +16,7 @@ SELECT			bs.database_name
           WHERE   1 = 1
 				  --and	bs.[type] = 'L'
       --            AND bs.is_copy_only = 0
-				  and database_name = 'TestReporter'
+				  --and database_name = 'TestReporter'
 				
 		order by bs.backup_set_id desc
 				
@@ -53,7 +53,7 @@ SELECT			bs.database_name
 				
 		order by bs.backup_set_id desc
 				
-/*
+
 9927MV1-BKP
 AIKSCAPPS
 CENMOENTRE

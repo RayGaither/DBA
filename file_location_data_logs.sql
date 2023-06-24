@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+
+=======
+--<<<<<<< HEAD
+>>>>>>> d866662978d00ef8d8c6d1b74502fb2dfcf1e60d
 SELECT 
 mdf.database_id, 
 mdf.name, 
@@ -39,8 +43,13 @@ where 1 = 1
 and mdf.database_id > 4
 and mdf.name not in ('_DBAdmin','Aux_DBA_Utilities', 'master', 'model','MSDB')
 order by 1;
+<<<<<<< HEAD
 
+
+=======
+*/
 /*
+>>>>>>> d866662978d00ef8d8c6d1b74502fb2dfcf1e60d
 SELECT * --name, cmptlevel 
 FROM master.dbo.sysdatabases
 where dbid > 4
