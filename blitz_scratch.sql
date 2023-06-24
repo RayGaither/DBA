@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-DBA.[dbo].[sp_Blitz] -- Health  check
+
+exec [sp_Blitz] -- Health  check
 
 DBA.[dbo].sp_BlitzCache -- find bad queries
 
