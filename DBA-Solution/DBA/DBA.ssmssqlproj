@@ -15,6 +15,18 @@
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
           <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
         </ConnectionNode>
+        <ConnectionNode Name="EXPSQL25:HI\argaither">
+          <Created>2023-04-21T09:57:03.3634712-04:00</Created>
+          <Type>SQL</Type>
+          <Server>EXPSQL25</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB />
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
         <ConnectionNode Name="GAROHSQL01:HI\argaither">
           <Created>2023-04-20T10:06:56.6250107-04:00</Created>
           <Type>SQL</Type>
@@ -36,6 +48,12 @@
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Alerts.sql</FullPath>
+        </FileNode>
+        <FileNode Name="AlertsFromEmails.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:EXPSQL25:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>EXPSQL25</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>AlertsFromEmails.sql</FullPath>
         </FileNode>
         <FileNode Name="all tables in view.sql">
           <AssociatedConnectionMoniker />
