@@ -3,7 +3,7 @@ exec [sp_Blitz] -- Health  check
 
 DBA.[dbo].sp_BlitzCache -- find bad queries
 
-DBA.[dbo].[sp_BlitzFirst] -- instance performance
+exec [sp_BlitzFirst] -- instance performance
 
 DBA.[dbo].sp_BlitzIndex --design correct index
 

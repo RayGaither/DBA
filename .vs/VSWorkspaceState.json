@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Deadlocks"
+    "\\Deadlocks",
+    "\\sp_whoisactive-11.35"
   ],
-  "SelectedNode": "\\events_deadlock_rpt_table.sql",
+  "SelectedNode": "\\blitz_scratch.sql",
   "PreviewInSolutionExplorer": false
 }

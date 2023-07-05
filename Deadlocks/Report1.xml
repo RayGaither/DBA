@@ -1,0 +1,138 @@
+﻿<deadlock>
+  <victim-list>
+    <victimProcess id="process1ad4268f468" />
+  </victim-list>
+  <process-list>
+    <process id="process1ad4268f468" taskpriority="0" logused="0" waitresource="PAGE: 11:1:4337816 " waittime="867" ownerId="649604771" transactionname="user_transaction" lasttranstarted="2023-06-30T07:15:21.963" XDES="0x1ab755ad980" lockMode="S" schedulerid="1" kpid="9296" status="suspended" spid="351" sbid="0" ecid="6" priority="0" trancount="0" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+    <process id="process1ad452124e8" taskpriority="0" logused="1920" waitresource="PAGE: 11:1:405733 " waittime="1011" ownerId="649605594" transactionname="user_transaction" lasttranstarted="2023-06-30T07:15:30.227" XDES="0x1ad3af94420" lockMode="IX" schedulerid="1" kpid="7164" status="suspended" spid="126" sbid="0" ecid="0" priority="0" trancount="2" lastbatchstarted="2023-06-30T07:15:30.610" lastbatchcompleted="2023-06-30T07:15:30.293" lastattention="1900-01-01T00:00:00.293" hostpid="4476" loginname="WECO_I210_db" isolationlevel="read committed (2)" xactid="649605594" currentdb="11" currentdbname="ERM" lockTimeout="4294967295">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="1400" stmtend="3142" sqlhandle="0x02000000d948680e380e9240823524afc1b4aa2d3d5218c20000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="adhoc" line="1" stmtend="2226" sqlhandle="0x0200000010f9451dc82573201ea8b154d4c24519d0cd5a190000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+INSERT INTO kvdba.term_calibration_results ( ge_serial_no, ge_catalog_no, meter_module_serial_no, meter_module_assembly_no, meter_module_date_code, base_serial_no, base_assembly_date_code, bme_assembly_no, customer_serial_no, test_start_time, test_complete_time, full_load_accuracy, lag_accuracy, light_load_accuracy, status, assembly_catalog_no, assembly_serial_no, station_id, match_point, elapsed_time, operator_id, meter_test_program, additional_test_acc1, weco_sw, bme_sup, mma_sup, fl_a, fl_c, lag_a, lag_c, config_file, ge_xtrabd1, vendor_xtrabd1, ge_xtrabd2, vendor_xtrabd2, base_relay_serial_no, amr_serial_no, amr_assembly_no, reject_reason_1, reject_reason_2 ) VALUES ( '10506577', '727XDV9009', '04755', '104X3980G416', '03H', '00054', '35G', '103X369808', '', '6-30-2023 7:2:19.492', '6-30-2023 7:15:40.195', 100.0018525686341917, 99.9949524319039540, 99.9433483729295347, 'P', '727XDV9009', '813422469', '8663', '6-30-2023 6:45:15.000', 801, '', '103X485003', 100.0071, '2.35.438z', 'FL', 'JV', 100.000, 100.0   </inputbuf>
+    </process>
+    <process id="process1ad4269cca8" taskpriority="0" logused="10000" waittime="1459" schedulerid="3" kpid="2468" status="suspended" spid="351" sbid="0" ecid="0" priority="0" trancount="1" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" loginname="srv_rma_app" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+    <process id="process1b83e6cd468" taskpriority="0" logused="10000" waittime="864" schedulerid="2" kpid="4328" status="suspended" spid="351" sbid="0" ecid="1" priority="0" trancount="0" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+    <process id="process1ad243adc28" taskpriority="0" logused="10000" waittime="863" schedulerid="4" kpid="7080" status="suspended" spid="351" sbid="0" ecid="4" priority="0" trancount="0" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+    <process id="process1ad45f9a108" taskpriority="0" logused="10000" waittime="864" schedulerid="3" kpid="8860" status="suspended" spid="351" sbid="0" ecid="2" priority="0" trancount="0" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+    <process id="process1b72bcec8c8" taskpriority="0" logused="10000" waittime="864" schedulerid="1" kpid="3260" status="suspended" spid="351" sbid="0" ecid="3" priority="0" trancount="0" lastbatchstarted="2023-06-30T07:15:30.150" lastbatchcompleted="2023-06-30T07:15:29.917" lastattention="1900-01-01T00:00:00.917" clientapp=".Net SqlClient Data Provider" hostname="CMX-RMA-PWRUP-1" hostpid="13840" isolationlevel="read committed (2)" xactid="649604771" currentdb="1" currentdbname="master" lockTimeout="4294967295" clientoption1="671088672" clientoption2="128056">
+      <executionStack>
+        <frame procname="adhoc" line="1" stmtstart="122" stmtend="2176" sqlhandle="0x020000009d86c82bdc2a9df388d820c17283c651df44055e0000000000000000000000000000000000000000">
+unknown    </frame>
+        <frame procname="unknown" line="1" sqlhandle="0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000">
+unknown    </frame>
+      </executionStack>
+      <inputbuf>
+(@ge nvarchar(4000),@notes nvarchar(4000),@cm nvarchar(4000))SELECT TOP (5) [ge_serial_no],[ge_catalog_no],[meter_module_serial_no],[meter_module_assembly_no],[meter_module_date_code],[base_serial_no],[base_assembly_date_code],[bme_assembly_no],[amr_serial_no],[amr_assembly_no],[amr_date_code],[customer_serial_no],[customer_id],[test_start_time],'2023-06-30 07:15:21' AS test_complete_time,[full_load_accuracy],[lag_accuracy],[light_load_accuracy],[additional_test_acc1],[additional_test_acc2],[additional_test_acc3],[additional_test_acc4],[additional_test_acc5],[status],[reject_reason_1],[reject_reason_2],[assembly_catalog_no],[assembly_serial_no],[station_id],[match_point],[elapsed_time],[order_no],[requisition_no],[item_no],[operator_id],[meter_test_program],[weco_sw],[BME_sup],[MMA_sup],[fl_a],[fl_c],[lag_a],[lag_c],[identity_no],[config_file],[ge_xtrabd1],[vendor_xtrabd1],[ge_xtrabd2],[vendor_xtrabd2],[base_relay_serial_no],'2023-06-30 07:15:21' AS purge_date,@notes AS notes,@cm AS CM_Name FROM [ERM].[KVDBA   </inputbuf>
+    </process>
+  </process-list>
+  <resource-list>
+    <pagelock fileid="1" pageid="4337816" dbid="11" subresource="FULL" objectname="ERM.KVDBA.term_calibration_results" id="lock1aa711c6080" mode="IX" associatedObjectId="72057595496824832">
+      <owner-list>
+        <owner id="process1ad452124e8" mode="IX" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1ad4268f468" mode="S" requestType="wait" />
+      </waiter-list>
+    </pagelock>
+    <pagelock fileid="1" pageid="405733" dbid="11" subresource="FULL" objectname="ERM.KVDBA.term_calibration_results" id="lock1abbdf23500" mode="S" associatedObjectId="72057595496824832">
+      <owner-list>
+        <owner id="process1ad4269cca8" mode="S" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1ad452124e8" mode="IX" requestType="wait" />
+      </waiter-list>
+    </pagelock>
+    <exchangeEvent id="Pipe1ad0acb4e80" WaitType="e_waitPipeGetRow" waiterType="Coordinator" nodeId="3" tid="0" ownerActivity="sentData" waiterActivity="needMoreData" merging="false" spilling="false" waitingToClose="false">
+      <owner-list>
+        <owner id="process1b83e6cd468" />
+        <owner id="process1ad243adc28" />
+        <owner id="process1b72bcec8c8" />
+        <owner id="process1ad45f9a108" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1ad4269cca8" />
+      </waiter-list>
+    </exchangeEvent>
+    <exchangeEvent id="Pipe1ad0acb5200" WaitType="e_waitPipeGetRow" waiterType="Consumer" nodeId="6" tid="1" ownerActivity="sentData" waiterActivity="needMoreData" merging="false" spilling="false" waitingToClose="false">
+      <owner-list>
+        <owner id="process1ad4268f468" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1b83e6cd468" />
+      </waiter-list>
+    </exchangeEvent>
+    <exchangeEvent id="Pipe1ad0acb5300" WaitType="e_waitPipeGetRow" waiterType="Consumer" nodeId="6" tid="2" ownerActivity="sentData" waiterActivity="needMoreData" merging="false" spilling="false" waitingToClose="false">
+      <owner-list>
+        <owner id="process1ad4268f468" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1ad243adc28" />
+      </waiter-list>
+    </exchangeEvent>
+    <exchangeEvent id="Pipe1ad0acb5500" WaitType="e_waitPipeGetRow" waiterType="Consumer" nodeId="6" tid="4" ownerActivity="sentData" waiterActivity="needMoreData" merging="false" spilling="false" waitingToClose="false">
+      <owner-list>
+        <owner id="process1ad4268f468" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1ad45f9a108" />
+      </waiter-list>
+    </exchangeEvent>
+    <exchangeEvent id="Pipe1ad0acb5400" WaitType="e_waitPipeGetRow" waiterType="Consumer" nodeId="6" tid="3" ownerActivity="sentData" waiterActivity="needMoreData" merging="false" spilling="false" waitingToClose="false">
+      <owner-list>
+        <owner id="process1ad4268f468" />
+      </owner-list>
+      <waiter-list>
+        <waiter id="process1b72bcec8c8" />
+      </waiter-list>
+    </exchangeEvent>
+  </resource-list>
+</deadlock>

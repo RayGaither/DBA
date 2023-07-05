@@ -127,10 +127,17 @@ EXECUTE sp_who2
 
 end;
 --create and populate table, executes above SP
-sp_whoDat
+exec sp_whoDat
 
 Select *
 from temp_sp_who2
---where hostname = 'ANKSVMSLAPPP100'
+where 1 = 1
+and  dbname = 'ERM'
+and spid in (
+'134',
+'268',
+'287',
+'299',
+'371')
 order by 3 
->>>>>>> master
+
