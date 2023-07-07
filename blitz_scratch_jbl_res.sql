@@ -4,7 +4,8 @@ exec [sp_Blitz]  -- Health  check
 
 exec sp_blitzwho
 --kill 218
-kill 209 --DESKTOP-QRTILBE  Jun 30 2023 10:55AM
+--kill 268 --DESKTOP-UBDGP8J	10.81.0.219	6/30/23 12:24 PM
+
 
 DBA.[dbo].sp_BlitzCache -- find bad queries
 
@@ -16,6 +17,8 @@ exec sp_BlitzIndex --design correct index
 exec sp_Whoisactive @get_locks = 1
 
 DBCC USEROPTIONS
+
+exec sp_WhoIsActive @get_additional_info = 1
 
 --DECLARE @IMPLICIT_TRANSACTIONS VARCHAR(3) = 'OFF';  
 --IF ( (2 & @@OPTIONS) = 2 ) SET @IMPLICIT_TRANSACTIONS = 'ON';  

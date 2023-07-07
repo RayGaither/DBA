@@ -13,4 +13,4 @@ SELECT OBJECT_NAME(OBJECT_ID) SP_Name
 
 SELECT OBJECT_NAME(object_id) AS MYSPDEFINITION
 FROM sys.procedures
-WHERE OBJECT_DEFINITION(object_id) LIKE '%ERM%';
+WHERE OBJECT_DEFINITION(object_id) LIKE '%[term_calibration_results] WHERE status=''P''%';
