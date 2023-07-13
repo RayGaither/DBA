@@ -1,9 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\CreateTableFtn",
+    "\\DateTable",
     "\\Deadlocks",
     "\\sp_whoisactive-11.35"
   ],
-  "SelectedNode": "\\Deadlocks\\events_blocked_process_read-report.sql",
+  "SelectedNode": "\\blitz_scratch_jbl_res.sql",
   "PreviewInSolutionExplorer": false
 }

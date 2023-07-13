@@ -42,4 +42,3 @@ where at.name = 'implicit_transaction'
 
 EXEC sp_WhoIsActive
 
-
