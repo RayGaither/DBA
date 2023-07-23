@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 
-=======
---<<<<<<< HEAD
->>>>>>> d866662978d00ef8d8c6d1b74502fb2dfcf1e60d
 SELECT 
 mdf.database_id, 
 mdf.name, 

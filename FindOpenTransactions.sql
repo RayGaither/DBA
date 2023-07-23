@@ -2,6 +2,12 @@
 --dbcc opentran
 --rollback
 --kill 130
+
+
+--2023-07-21 13:29:41.210
+--2023-07-21 13:31:57.313 
+--2023-07-21 13:32:23.607
+
 SELECT
     [s_tst].[session_id],
     [s_es].[login_name] AS [Login Name],
@@ -34,3 +40,10 @@ CROSS APPLY
 OUTER APPLY
     sys.dm_exec_query_plan ([s_er].[plan_handle]) AS [s_eqp]
 where [s_tdt].[database_transaction_begin_time] is not null
+
+/*
+kill 55
+Kill 57
+kill 59
+kill 66
+*/

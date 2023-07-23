@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\BI360",
     "\\CreateTableFtn",
     "\\DateTable",
     "\\Deadlocks",
     "\\sp_whoisactive-11.35"
   ],
-  "SelectedNode": "\\blitz_scratch_jbl_res.sql",
+  "SelectedNode": "\\blitz_scratch.sql",
   "PreviewInSolutionExplorer": false
 }
