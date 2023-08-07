@@ -1,6 +1,6 @@
 
 
-use zDBAMaint
+use master
 go
 
 
@@ -65,7 +65,7 @@ Select *
 from temp_sp_who2
 where 1 = 1
 --and login = 'hi\ploo'
-and DBName = 'solver_repository'
+--and DBName = 'solver_repository'
 order by 3 
 
 
