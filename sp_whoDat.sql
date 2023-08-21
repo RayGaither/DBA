@@ -1,6 +1,6 @@
 
 
-use zDBAMaint
+use master
 go
 
 
@@ -64,7 +64,11 @@ exec sp_whoDat
 Select *
 from temp_sp_who2
 where 1 = 1
+<<<<<<< HEAD
 and login not in ('LSS\Ray.Gaither', 'sa')
+=======
+--and login = 'hi\ploo'
+>>>>>>> 295bfde198416753c6b316b82e5c25a77ef09ff6
 --and DBName = 'solver_repository'
 order by 3 
 
