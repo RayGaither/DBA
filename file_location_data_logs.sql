@@ -12,7 +12,7 @@ FROM (SELECT * FROM sys.master_files WHERE type_desc = 'ROWS' ) mdf
 		    ON mdf.database_id = ldf.database_id
 join master.dbo.sysdatabases sd on mdf.database_id = sd.dbid
 where 1 = 1
-and mdf.database_id > 4
+--and mdf.database_id > 4
 and mdf.name not in ('_DBAdmin','Aux_DBA_Utilities', 'master', 'model','MSDB')
 order by 1;
 

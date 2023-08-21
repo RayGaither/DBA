@@ -64,8 +64,8 @@ exec sp_whoDat
 Select *
 from temp_sp_who2
 where 1 = 1
---and login = 'hi\ploo'
-and DBName = 'solver_repository'
+and login not in ('LSS\Ray.Gaither', 'sa')
+--and DBName = 'solver_repository'
 order by 3 
 
 
