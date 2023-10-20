@@ -1,7 +1,11 @@
 
 exec [sp_Blitz]  -- Health  check
 
-exec sp_BlitzCache -- find bad queries
+exec sp_BlitzCache  @databasename = 'Solver_Scheduler', @ExpertMode = 1 -- find bad queries
+
+--Plan Warnings, Multiple Plans (2), Forced Serialization, Long Running With Low CPU
+--No warnings detected.  Try running sp_BlitzCache with @ExpertMode = 1 to find more advanced problems.
+--Looks for intrinsic functions and expressions as predicates, and leading wildcard LIKE searches.
 
 exec [sp_BlitzFirst] -- instance performance
 
@@ -12,62 +16,40 @@ select * from sys.dm_os_wait_stats
 select * from sys.dm_exec_session_wait_stats 
  --provides similar information by session
 
-select c.definition,convert(bit,OBJECTPROPERTY(c.object_id,N'ExecIsQuotedIdentOn')) from DBA.sys.sql_modules c where c.object_id = @_msparam_0
-dba_maint.dbo.sp_whoisactive
+--Writes are averaging longer than 100ms for at least one database on this drive.  
+--	For specific database file speeds, run the query from the information link.
 
 [dbo].[sp_AllNightLog]
 
-DBA.[dbo].[sp_BlitzAnalysis] @OutputDatabaseName = N'DBA_Maint'
+exec dbo.[sp_BlitzAnalysis] @OutputDatabaseName = N'zDBAMaint'
 
-EXEC dbo.sp_BlitzIndex @DatabaseName='solver_repository', @SchemaName='dbo', @TableName='temp_sp_who2';
-/*Then, run it with these options:
-EXEC sp_Blitz @CheckUserDatabaseObjects = 0, @CheckServerInfo = 1;
+EXEC dbo.sp_BlitzIndex @DatabaseName='BI360LSS', @SchemaName='dbo', @TableName='temp_sp_who2';
 
-These two parameters give you a server-level check without looking inside databases (slowly) for things like heaps and triggers.
-*/
-The 52.00MB log file has not been backed up in the last week.
+EXEC dbo.sp_BlitzIndex @DatabaseName='solver_repository'
 
-This sp_configure option has been changed.  Its default value is 2147483647 and it has been set to 26624.
+EXEC dbo.sp_BlitzIndex @DatabaseName='CustomArea'
+EXEC dbo.sp_BlitzIndex @DatabaseName='CustomArea', @SchemaName='dbo', @TableName='AzureGLStaging';
 
-321 plans are present for a single query in the plan cache - 
-=======
-DBA.[dbo].[sp_Blitz] -- Health  check
-
-DBA.[dbo].sp_BlitzCache -- find bad queries
-
-DBA.[dbo].[sp_BlitzFirst] -- instance performance
-
-DBA.[dbo].sp_BlitzIndex --design correct index
-
-DBA.[dbo].sp_BlitzWho --whats happenning right now
-
---ALTER TABLE DBA.[dbo].[temp_sp_who2] REBUILD;
-
-select c.definition,convert(bit,OBJECTPROPERTY(c.object_id,N'ExecIsQuotedIdentOn')) from DBA.sys.sql_modules c where c.object_id = @_msparam_0
-dba_maint.dbo.sp_whoisactive
-
-[dbo].[sp_AllNightLog]
-
-DBA.[dbo].[sp_BlitzAnalysis] @OutputDatabaseName = N'DBA_Maint'
-
-EXEC dbo.sp_BlitzIndex @DatabaseName='dba_maint', @SchemaName='dbo', @TableName='temp_sp_who2';
-/*Then, run it with these options:
-EXEC sp_Blitz @CheckUserDatabaseObjects = 0, @CheckServerInfo = 1;
-
-These two parameters give you a server-level check without looking inside databases (slowly) for things like heaps and triggers.
-*/
+CREATE INDEX [Dim1_Includes] ON [BI360LSS].[dbo].[f_Trans_OT3] ([Dim1])  
+INCLUDE ([Value1], 
+[Dim6], [Dim2], [Dim3], [Dim11], [Dim10]) WITH (FILLFACTOR=100, ONLINE=off, SORT_IN_TEMPDB=off);
 
 
-
-The index [ankura_dw].[dbo].[JournalLinesRaas].[_dta_index_JournalLinesRaas_5_1101963002__K19] is a leftover hypothetical index from the Index Tuning Wizard or Database Tuning Advisor.  This index is not actually helping performance and should be removed.
+--select s.name [Schema], t.name [Table], i.name [Index], p.data_compression_desc Compression
+--     , case when p.index_id in (0, 1) then 'Table' else 'Index' end CompressionObject
+--  from sys.tables t
+--  join sys.schemas s on t.schema_id = s.schema_id
+--  join sys.indexes i on t.object_id = i.object_id
+--  join sys.partitions p on (i.object_id = p.object_id and i.index_id = p.index_id)
+--where t.type = 'U'
+--order by 1, 2, p.index_id, 3
 
 
 
 
---[dbo].[sp_BlitzCache] @databasename = [ankura_dw]
 
 
 
-321 plans are present for a single query in the plan cache - 
->>>>>>> master
-meaning we probably have parameterization issues.
+
+
+

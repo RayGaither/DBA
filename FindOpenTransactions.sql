@@ -42,8 +42,13 @@ OUTER APPLY
 where [s_tdt].[database_transaction_begin_time] is not null
 
 /*
-kill 55
-Kill 57
-kill 59
-kill 66
+kill 58
+Kill 61
+kill 63
+kill 69
 */
+
+
+SELECT d.is_master_key_encrypted_by_server
+FROM sys.databases AS d
+WHERE d.name = 'solver_repository';
